@@ -1,0 +1,17 @@
+com\hospital\repository\PatientRepository.class
+com\hospital\service\ServiceService.class
+com\hospital\controller\SoinController.class
+com\hospital\model\Patient.class
+com\hospital\HospitalDashboardApplication.class
+com\hospital\model\Role.class
+com\hospital\controller\PatientController.class
+com\hospital\repository\ServiceRepository.class
+com\hospital\repository\SoinRepository.class
+com\hospital\config\WebConfig.class
+com\hospital\model\Soin.class
+com\hospital\repository\UtilisateurRepository.class
+com\hospital\service\SoinService.class
+com\hospital\controller\ServiceController.class
+com\hospital\model\Utilisateur.class
+com\hospital\service\PatientService.class
+com\hospital\model\Service.class

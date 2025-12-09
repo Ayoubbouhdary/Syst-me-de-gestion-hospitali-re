@@ -1,0 +1,31 @@
+-- Insertion des services hospitaliers
+INSERT INTO service (nom, budget_mensuel, budget_annuel, cout_actuel) VALUES
+('Cardiologie', 150000.00, 1800000.00, 125340.50),
+('Urgences', 200000.00, 2400000.00, 187650.25),
+('Chirurgie', 180000.00, 2160000.00, 165890.75),
+('Pédiatrie', 120000.00, 1440000.00, 98450.00),
+('Radiologie', 100000.00, 1200000.00, 89230.50);
+
+-- Insertion des patients de test
+INSERT INTO patient (nom, prenom, date_naissance, numero_securite_sociale, cout_total) VALUES
+('Dupont', 'Jean', '1980-05-15', '180051234567890', 1250.50),
+('Martin', 'Marie', '1975-08-22', '275082345678901', 2340.75),
+('Bernard', 'Pierre', '1992-03-10', '192031012345678', 890.00),
+('Dubois', 'Sophie', '1988-11-05', '288110567890123', 3450.25),
+('Petit', 'Luc', '1965-07-18', '165071890123456', 5670.80);
+
+-- Insertion des soins
+INSERT INTO soin (patient_id, service_id, type_soin, cout, date_soin, description) VALUES
+(1, 1, 'Consultation cardiologie', 150.00, '2025-01-15 10:30:00', 'Consultation de routine'),
+(1, 1, 'ECG', 80.00, '2025-01-15 11:00:00', 'Électrocardiogramme'),
+(1, 1, 'Échographie cardiaque', 1020.50, '2025-01-20 14:00:00', 'Échographie doppler'),
+(2, 2, 'Urgence', 300.00, '2025-01-18 22:15:00', 'Prise en charge urgence'),
+(2, 3, 'Radiographie', 2040.75, '2025-01-19 09:00:00', 'Radio thorax'),
+(3, 4, 'Consultation pédiatrie', 890.00, '2025-01-22 15:30:00', 'Suivi vaccinal');
+
+-- Insertion d'un utilisateur admin (mot de passe: password)
+-- Note: Le mot de passe doit être hashé avec BCrypt en production
+INSERT INTO utilisateur (email, mot_de_passe, nom, prenom, role) VALUES
+('admin@hospital.com', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Admin', 'System', 'ADMIN'),
+('financier@hospital.com', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Financier', 'User', 'FINANCIER'),
+('medecin@hospital.com', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Medecin', 'User', 'MEDECIN');
