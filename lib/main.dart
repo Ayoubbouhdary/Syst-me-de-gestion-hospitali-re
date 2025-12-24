@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/theme_provider.dart';
@@ -33,7 +34,7 @@ class MyApp extends ConsumerWidget {
     final router = ref.watch(goRouterProvider);
     final themeMode = ref.watch(themeNotifierProvider);
     final language = ref.watch(languageProvider);
-    
+
     // Définit la locale pour Intl en fonction de la langue
     _updateIntlLocale(language);
 
@@ -51,9 +52,14 @@ class MyApp extends ConsumerWidget {
         Locale('en', 'US'),
         Locale('ar', ''),
       ],
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
     );
   }
-  
+
   /// Retourne la Locale correspondant à la langue
   Locale _getLocale(String language) {
     switch (language) {
@@ -65,7 +71,7 @@ class MyApp extends ConsumerWidget {
         return const Locale('fr', 'FR');
     }
   }
-  
+
   /// Met à jour la locale Intl pour les formats de date/nombre
   void _updateIntlLocale(String language) {
     switch (language) {

@@ -14,7 +14,6 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/rendez-vous")
 @RequiredArgsConstructor
-
 public class RendezVousController {
 
     private final RendezVousService rendezVousService;

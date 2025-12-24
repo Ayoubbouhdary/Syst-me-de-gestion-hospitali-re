@@ -55,3 +55,25 @@ com\hospital\dto\PrevisionDTO.class
 com\hospital\model\Utilisateur.class
 com\hospital\service\FinanceService.class
 com\hospital\config\DataInitializer.class
+com\hospital\config\SecurityConfig.class
+com\hospital\controller\PatientController.class
+com\hospital\model\BudgetService$StatutBudget.class
+com\hospital\controller\RendezVousController.class
+com\hospital\service\AuthService.class
+=======
+com\hospital\dto\CoutSoinDTO.class
+com\hospital\repository\CoutSoinRepository.class
+com\hospital\model\HistoriqueDepense$TypeDepense.class
+com\hospital\controller\PatientController.class
+com\hospital\model\BudgetService$StatutBudget.class
+>>>>>>> sele_test2
+com\hospital\config\WebConfig.class
+com\hospital\service\PrevisionService.class
+com\hospital\repository\UtilisateurRepository.class
+com\hospital\dto\PrevisionDTO.class
+com\hospital\model\Utilisateur.class
+com\hospital\service\FinanceService.class
+<<<<<<< HEAD
+com\hospital\config\DataInitializer.class
+=======
+>>>>>>> sele_test2

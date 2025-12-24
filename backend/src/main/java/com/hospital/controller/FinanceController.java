@@ -19,7 +19,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/finance")
 @RequiredArgsConstructor
-
 public class FinanceController {
 
     private final FinanceService financeService;

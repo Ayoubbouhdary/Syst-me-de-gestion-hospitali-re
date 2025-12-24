@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan d'Assurance Qualité - Système de Gestion Hospitalière</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            /* Premium Color Palette */
+            --primary-color: #1a252f;
+            /* Deep Navy */
+            --secondary-color: #34495e;
+            /* Slate */
+            --accent-color: #1abc9c;
+            /* Teal/Mint */
+            --accent-hover: #16a085;
+            --text-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --border-color: #e9ecef;
+            --code-bg: #2d3436;
+            --code-text: #dfe6e9;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: #f4f6f9;
+            /* Subtle background */
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Container for a paper-like effect */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 0.2em;
+            letter-spacing: -1px;
+        }
+
+        h1+small {
+            display: block;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            display: inline-block;
+            padding-right: 20px;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+            font-size: 1.4em;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        h4 {
+            color: #576574;
+            font-size: 1.1em;
+            margin-top: 25px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+            color: #4a5568;
+        }
+
+        /* Realisé par Section */
+        .hero-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-section h2 {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+            margin-top: 0;
+        }
+
+        .hero-section p {
+            color: #ecf0f1;
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        /* Tables - Modern Look */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 30px 0;
+            box-shadow: var(--shadow-sm);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        th,
+        td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #f1f2f6;
+            transition: background 0.2s ease;
+        }
+
+        /* Code Blocks */
+        pre {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #3d3d3d;
+        }
+
+        code {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background-color: rgba(27, 31, 35, 0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #e83e8c;
+            font-size: 0.9em;
+        }
+
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+        }
+
+        /* TOC */
+        .toc {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.5em;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+            column-count: 2;
+            column-gap: 40px;
+        }
+
+        .toc li {
+            margin-bottom: 10px;
+            break-inside: avoid;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.2s;
+            font-weight: 600;
+        }
+
+        .toc a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 2px solid var(--border-color);
+            text-align: center;
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+
+        .signature-box {
+            height: 80px;
+            border-bottom: 2px dashed #bdc3c7;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .toc ul {
+                column-count: 1;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media print {
+
+            body,
+            .container {
+                background: white;
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .hero-section {
+                color: black;
+                background: none;
+                border: 1px solid #ccc;
+            }
+
+            .hero-section h2,
+            .hero-section p {
+                color: black;
+            }
+
+            .toc {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            pre {
+                border: 1px solid #ccc;
+                white-space: pre-wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>PLAN D'ASSURANCE QUALITÉ (PAQ)</h1>
+        <small>Système de Gestion Hospitalière</small>
+
+        <!-- Nouvelle Section Realisé par -->
+        <div class="hero-section">
+            <h2>RÉALISÉ PAR</h2>
+            <p><strong>BOUHDARY Ayoub</strong> - QA & DevOps</p>
+            <p><strong>GUEDAD Hassan</strong> - Développeur Frontend</p>
+            <p><strong>GUEDAD Mohssine</strong> - Développeur Backend</p>
+
+        </div>
+
+        <table>
+            <tr>
+                <th>Information</th>
+                <th>Détail</th>
+            </tr>
+            <tr>
+                <td><strong>Projet</strong></td>
+                <td>Système de Gestion Hospitalière</td>
+            </tr>
+            <tr>
+                <td><strong>Version du document</strong></td>
+                <td>1.0</td>
+            </tr>
+
+            <tr>
+                <td><strong>Auteur</strong></td>
+                <td>Équipe de développement (BOUHDARY Ayoub, GUEDAD Hassane, GUEDAD Mouhssine)</td>
+            </tr>
+
+        </table>
+
+        <div class="toc">
+            <h2>TABLE DES MATIÈRES</h2>
+            <ul>
+                <li><a href="#1-introduction">1. Introduction</a></li>
+                <li><a href="#2-objectifs-du-paq">2. Objectifs du PAQ</a></li>
+                <li><a href="#3-périmètre-du-projet">3. Périmètre du projet</a></li>
+                <li><a href="#4-organisation-et-responsabilités">4. Organisation et responsabilités</a></li>
+                <li><a href="#5-gestion-de-la-documentation">5. Gestion de la documentation</a></li>
+                <li><a href="#6-gestion-de-configuration">6. Gestion de configuration</a></li>
+                <li><a href="#7-processus-de-développement">7. Processus de développement</a></li>
+                <li><a href="#8-assurance-qualité-du-code">8. Assurance qualité du code</a></li>
+                <li><a href="#9-stratégie-de-tests">9. Stratégie de tests</a></li>
+                <li><a href="#10-sécurité">10. Sécurité</a></li>
+                <li><a href="#11-revue-et-audit">11. Revue et audit</a></li>
+                <li><a href="#12-indicateurs-qualité">12. Indicateurs qualité</a></li>
+                <li><a href="#13-annexes">13. Annexes</a></li>
+            </ul>
+        </div>
+
+        <section id="1-introduction">
+            <h2>1. INTRODUCTION</h2>
+
+            <h3>1.1 Objet du document</h3>
+            <p>Le présent Plan d'Assurance Qualité (PAQ) définit l'ensemble des dispositions prises pour garantir la
+                qualité
+                du <strong>Système de Gestion Hospitalière</strong>. Il décrit les processus, les normes, les outils et
+                les
+                responsabilités mis en œuvre tout au long du cycle de vie du projet.</p>
+
+            <h3>1.2 Documents de référence</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Référence</th>
+                        <th>Document</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>REF-001</td>
+                        <td>Cahier des charges fonctionnel</td>
+                    </tr>
+                    <tr>
+                        <td>REF-002</td>
+                        <td>Spécifications techniques</td>
+                    </tr>
+                    <tr>
+                        <td>REF-003</td>
+                        <td>ARCHITECTURE.md</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>1.3 Terminologie</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Terme</th>
+                        <th>Définition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>PAQ</strong></td>
+                        <td>Plan d'Assurance Qualité</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MOA</strong></td>
+                        <td>Maîtrise d'Ouvrage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MOE</strong></td>
+                        <td>Maîtrise d'Œuvre</td>
+                    </tr>
+                    <tr>
+                        <td><strong>QA</strong></td>
+                        <td>Quality Assurance (Assurance Qualité)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CI/CD</strong></td>
+                        <td>Continuous Integration / Continuous Deployment</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PR</strong></td>
+                        <td>Pull Request</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UT</strong></td>
+                        <td>Tests Unitaires</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IT</strong></td>
+                        <td>Tests d'Intégration</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="2-objectifs-du-paq">
+            <h2>2. OBJECTIFS DU PAQ</h2>
+
+            <h3>2.1 Objectifs principaux</h3>
+            <ol>
+                <li><strong>Garantir la conformité</strong> aux exigences fonctionnelles et techniques</li>
+                <li><strong>Assurer la traçabilité</strong> des exigences jusqu'à leur implémentation</li>
+                <li><strong>Maintenir un niveau de qualité</strong> constant du code source</li>
+                <li><strong>Prévenir les défauts</strong> par des processus de revue et de test</li>
+                <li><strong>Faciliter la maintenance</strong> et l'évolutivité du système</li>
+            </ol>
+
+            <h3>2.2 Critères de qualité</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>Description</th>
+                        <th>Objectif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Fiabilité</strong></td>
+                        <td>Stabilité du système</td>
+                        <td>99.9% de disponibilité</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Performance</strong></td>
+                        <td>Temps de réponse</td>
+                        <td>&lt; 2 secondes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sécurité</strong></td>
+                        <td>Protection des données</td>
+                        <td>Conformité RGPD</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Maintenabilité</strong></td>
+                        <td>Facilité de modification</td>
+                        <td>Couverture de tests &gt; 80%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Utilisabilité</strong></td>
+                        <td>Ergonomie</td>
+                        <td>Score SUS &gt; 70</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Portabilité</strong></td>
+                        <td>Multi-plateforme</td>
+                        <td>Web, Android, iOS, Windows</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="3-périmètre-du-projet">
+            <h2>3. PÉRIMÈTRE DU PROJET</h2>
+
+            <h3>3.1 Description fonctionnelle</h3>
+            <p>Le Système de Gestion Hospitalière couvre les modules suivants :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Fonctionnalités</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Authentification</strong></td>
+                        <td>Connexion sécurisée, JWT, gestion des sessions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dashboard</strong></td>
+                        <td>Tableau de bord, statistiques, indicateurs clés</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Patients</strong></td>
+                        <td>CRUD patients, historique médical, dossiers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Services</strong></td>
+                        <td>Gestion des départements, budgets par service</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Soins</strong></td>
+                        <td>Enregistrement des soins, coûts, types de soins</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rendez-vous</strong></td>
+                        <td>Planification, calendrier, statuts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Finances</strong></td>
+                        <td>Revenus, dépenses, exports (PDF, Excel, CSV)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rapports</strong></td>
+                        <td>Génération de rapports, graphiques</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Notifications</strong></td>
+                        <td>Alertes, rappels, fil d'activité</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paramètres</strong></td>
+                        <td>Configuration, langue, thème, sécurité</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 Architecture technique</h3>
+            <pre>
+┌─────────────────────────────────────────────────────────────┐
+│                    FRONTEND (Flutter)                        │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
+│  │   Web App   │  │ Mobile App  │  │   Desktop App       │  │
+│  │  (Port 3000)│  │ (Android/iOS│  │   (Windows)         │  │
+│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                 BACKEND (Spring Boot)                        │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
+│  │ REST API    │  │ Auth/JWT    │  │   Business Logic    │  │
+│  │ (Port 8080) │  │ + BCrypt    │  │                     │  │
+│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   BASE DE DONNÉES                            │
+│  ┌─────────────────────────────────────────────────────────┐│
+│  │              PostgreSQL (Port 5432)                     ││
+│  └─────────────────────────────────────────────────────────┘│
+└─────────────────────────────────────────────────────────────┘
+</pre>
+
+            <h3>3.3 Technologies utilisées</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Composant</th>
+                        <th>Technologie</th>
+                        <th>Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>Flutter/Dart</td>
+                        <td>3.x</td>
+                    </tr>
+                    <tr>
+                        <td>State Management</td>
+                        <td>Riverpod</td>
+                        <td>2.x</td>
+                    </tr>
+                    <tr>
+                        <td>Routing</td>
+                        <td>GoRouter</td>
+                        <td>14.x</td>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>Spring Boot</td>
+                        <td>3.2.0</td>
+                    </tr>
+                    <tr>
+                        <td>Sécurité</td>
+                        <td>Spring Security + JWT</td>
+                        <td>6.x</td>
+                    </tr>
+                    <tr>
+                        <td>Base de données</td>
+                        <td>PostgreSQL</td>
+                        <td>15.x</td>
+                    </tr>
+                    <tr>
+                        <td>Conteneurisation</td>
+                        <td>Docker</td>
+                        <td>24.x</td>
+                    </tr>
+                    <tr>
+                        <td>CI/CD</td>
+                        <td>GitHub Actions</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="4-organisation-et-responsabilités">
+            <h2>4. ORGANISATION ET RESPONSABILITÉS</h2>
+
+            <h3>4.1 Organigramme du projet</h3>
+            <pre>
+                    ┌────────────────────────────────┐
+                    │      ÉQUIPE PROJET (3 pers.)   │
+                    └────────────────┬───────────────┘
+                                     │
+         ┌───────────────────────────┼───────────────────────────┐
+         │                           │                           │
+         ▼                           ▼                           ▼
+┌─────────────────────┐  ┌─────────────────────┐  ┌─────────────────────┐
+│   GUEDAD Hassan     │  │  GUEDAD Mouhssine   │  │   BOUHDARY Ayoub    │
+│                     │  │                     │  │                     │
+│  🎨 FRONTEND        │  │  ⚙️ BACKEND         │  │  🔧 QA & DEVOPS     │
+│  • Flutter/Dart     │  │  • Spring Boot      │  │  • Tests            │
+│  • UI/UX            │  │  • Widgets          │  │  • CI/CD            │
+│  • State Management │  │  • API REST         │  │  • Docker           │
+│                     │  │  • Sécurité JWT     │  │  • Base de données  │
+│                     │  │  • Business Logic   │  │                     │
+└─────────────────────┘  └─────────────────────┘  └─────────────────────┘
+</pre>
+
+            <h3>4.2 Répartition des rôles</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Membre</th>
+                        <th>Rôle Principal</th>
+                        <th>Responsabilités</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GUEDAD Hassan</strong></td>
+                        <td>Développeur Frontend</td>
+                        <td>Flutter, Dart, UI/UX, Widgets, Riverpod, GoRouter</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GUEDAD Mouhssine</strong></td>
+                        <td>Développeur Backend</td>
+                        <td>Spring Boot, API REST, JWT, Spring Security, JPA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BOUHDARY Ayoub</strong></td>
+                        <td>QA & DevOps</td>
+                        <td>Tests, CI/CD, Docker, PostgreSQL, SonarQube, JMeter</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>4.3 Matrice des responsabilités (RACI)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activité</th>
+                        <th>GUEDAD H. (Frontend)</th>
+                        <th>GUEDAD M. (Backend)</th>
+                        <th>BOUHDARY A. (QA/DevOps)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Architecture Frontend</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">I</td>
+                    </tr>
+                    <tr>
+                        <td>Architecture Backend</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">I</td>
+                    </tr>
+                    <tr>
+                        <td>Développement UI Flutter</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">I</td>
+                    </tr>
+                    <tr>
+                        <td>Développement API REST</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">I</td>
+                    </tr>
+                    <tr>
+                        <td>Base de données PostgreSQL</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                    <tr>
+                        <td>Tests unitaires Frontend</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">A</td>
+                    </tr>
+                    <tr>
+                        <td>Tests unitaires Backend</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">A</td>
+                    </tr>
+                    <tr>
+                        <td>Tests fonctionnels (Selenium)</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                    <tr>
+                        <td>Tests performance (JMeter)</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                    <tr>
+                        <td>Configuration CI/CD</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">I</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                    <tr>
+                        <td>Configuration Docker</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                    <tr>
+                        <td>Analyse SonarQube</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">C</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                    <tr>
+                        <td>Documentation technique</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                    <tr>
+                        <td>Revue de code</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">R</td>
+                        <td style="text-align:center">R</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>Légende : R = Responsable, A = Approbateur, C = Consulté, I = Informé</em></p>
+
+            <h3>4.4 Responsabilités détaillées</h3>
+            <h4>GUEDAD Hassan - Frontend</h4>
+            <ul>
+                <li>Développe l'interface utilisateur avec Flutter/Dart</li>
+                <li>Implémente le state management avec Riverpod</li>
+                <li>Crée les widgets réutilisables et le design system</li>
+                <li>Assure la navigation avec GoRouter</li>
+                <li>Gère le support multilingue (FR, EN, AR)</li>
+                <li>Rédige les tests widgets Flutter</li>
+            </ul>
+
+            <h4>GUEDAD Mouhssine - Backend</h4>
+            <ul>
+                <li>Développe l'API REST avec Spring Boot</li>
+                <li>Implémente l'authentification JWT et Spring Security</li>
+                <li>Crée les entités JPA et les repositories</li>
+                <li>Gère la logique métier (services, contrôleurs)</li>
+                <li>Configure les endpoints et la sécurité CORS</li>
+                <li>Rédige les tests unitaires JUnit</li>
+            </ul>
+
+            <h4>BOUHDARY Ayoub - QA & DevOps</h4>
+            <ul>
+                <li>Configure et maintient PostgreSQL</li>
+                <li>Met en place Docker et Docker Compose</li>
+                <li>Configure le pipeline CI/CD (GitHub Actions)</li>
+                <li>Exécute les analyses SonarQube</li>
+                <li>Développe les tests fonctionnels (Selenium)</li>
+                <li>Réalise les tests de performance (JMeter)</li>
+                <li>Surveille la qualité et les métriques</li>
+            </ul>
+        </section>
+
+        <section id="5-gestion-de-la-documentation">
+            <h2>5. GESTION DE LA DOCUMENTATION</h2>
+
+
+
+            <h3>5.2 Conventions de nommage</h3>
+            <pre>[TYPE]_[NOM]_v[VERSION].[EXTENSION]
+
+Exemples :
+- SPEC_ModulePatients_v1.0.pdf
+- TEST_RapportSprint5_v1.2.pdf
+- DOC_ManuelUtilisateur_v2.0.pdf</pre>
+
+            <h3>5.3 Gestion des versions documentaires</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0.x</td>
+                        <td>Brouillon, en cours de rédaction</td>
+                    </tr>
+                    <tr>
+                        <td>1.0</td>
+                        <td>Version initiale validée</td>
+                    </tr>
+                    <tr>
+                        <td>1.0</td>
+                        <td>Version initiale validée</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="6-gestion-de-configuration">
+            <h2>6. GESTION DE CONFIGURATION</h2>
+
+            <h3>6.1 Outil de gestion de versions</h3>
+            <ul>
+                <li><strong>Outil</strong> : Git</li>
+                <li><strong>Plateforme</strong> : GitHub</li>
+                <li><strong>Repository</strong> : <code>flutter_project_Syst-me-de-Gestion-Hospitali-re</code></li>
+            </ul>
+
+            <h3>6.2 Stratégie de branches</h3>
+            <pre>
+main (production)
+  │
+  ├── develop (intégration)
+  │     │
+  │     ├── feature/[nom-feature]
+  │     │
+  │     ├── bugfix/[nom-bug]
+  │     │
+  │     └── hotfix/[nom-hotfix]
+  │
+  └── release/[version]
+</pre>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Branche</th>
+                        <th>Usage</th>
+                        <th>Protection</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>main</code></td>
+                        <td>Code en production</td>
+                        <td>PR obligatoire, 2 approbations</td>
+                    </tr>
+                    <tr>
+                        <td><code>develop</code></td>
+                        <td>Intégration des features</td>
+                        <td>PR obligatoire, 1 approbation</td>
+                    </tr>
+                    <tr>
+                        <td><code>feature/*</code></td>
+                        <td>Nouvelles fonctionnalités</td>
+                        <td>Libre</td>
+                    </tr>
+                    <tr>
+                        <td><code>bugfix/*</code></td>
+                        <td>Corrections de bugs</td>
+                        <td>Libre</td>
+                    </tr>
+                    <tr>
+                        <td><code>hotfix/*</code></td>
+                        <td>Corrections urgentes</td>
+                        <td>PR vers main</td>
+                    </tr>
+                    <tr>
+                        <td><code>release/*</code></td>
+                        <td>Préparation de version</td>
+                        <td>PR vers main et develop</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>6.3 Convention de commits</h3>
+            <p>Format : <code>[type]([scope]): [description]</code></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>feat</code></td>
+                        <td>Nouvelle fonctionnalité</td>
+                    </tr>
+                    <tr>
+                        <td><code>fix</code></td>
+                        <td>Correction de bug</td>
+                    </tr>
+                    <tr>
+                        <td><code>docs</code></td>
+                        <td>Documentation</td>
+                    </tr>
+                    <tr>
+                        <td><code>style</code></td>
+                        <td>Formatage, pas de changement de code</td>
+                    </tr>
+                    <tr>
+                        <td><code>refactor</code></td>
+                        <td>Refactorisation</td>
+                    </tr>
+                    <tr>
+                        <td><code>test</code></td>
+                        <td>Ajout/modification de tests</td>
+                    </tr>
+                    <tr>
+                        <td><code>chore</code></td>
+                        <td>Maintenance, dépendances</td>
+                    </tr>
+                    <tr>
+                        <td><code>security</code></td>
+                        <td>Correction de sécurité</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Exemples :</strong></p>
+            <pre>
+feat(auth): ajouter authentification JWT avec BCrypt
+fix(patients): corriger la validation du formulaire
+docs(readme): mettre à jour les instructions d'installation
+security(auth): invalider les tokens après changement de mot de passe
+</pre>
+
+            <h3>6.4 Processus de Pull Request</h3>
+            <pre>
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│   Créer     │───▶│   Review    │───▶│   Tests     │───▶│   Merge     │
+│   PR        │    │   Code      │    │   CI/CD     │    │             │
+└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
+</pre>
+            <p><strong>Checklist PR :</strong></p>
+            <ul>
+                <li><input type="checkbox" disabled> Le code respecte les normes de codage</li>
+                <li><input type="checkbox" disabled> Les tests unitaires passent</li>
+                <li><input type="checkbox" disabled> La couverture de tests est maintenue</li>
+                <li><input type="checkbox" disabled> La documentation est mise à jour (docstring, README)</li>
+                <li><input type="checkbox" disabled> Pas de warnings ou erreurs lint</li>
+                <li><input type="checkbox" disabled> Au moins 1 approbation (2 pour main)</li>
+            </ul>
+        </section>
+
+        <section id="7-processus-de-développement">
+            <h2>7. PROCESSUS DE DÉVELOPPEMENT</h2>
+
+            <h3>7.1 Méthodologie</h3>
+            <p>Le projet suit une méthodologie <strong>Agile Scrum</strong> :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Élément</th>
+                        <th>Durée/Fréquence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sprint</td>
+                        <td>2 semaines</td>
+                    </tr>
+                    <tr>
+                        <td>Daily Standup</td>
+                        <td>Quotidien, 15 min</td>
+                    </tr>
+                    <tr>
+                        <td>Sprint Planning</td>
+                        <td>Début de sprint, 2h</td>
+                    </tr>
+                    <tr>
+                        <td>Sprint Review</td>
+                        <td>Fin de sprint, 1h</td>
+                    </tr>
+                    <tr>
+                        <td>Rétrospective</td>
+                        <td>Fin de sprint, 1h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>7.2 Cycle de vie d'une User Story</h3>
+            <pre>
+┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
+│  Backlog │──▶│  To Do   │──▶│   In     │──▶│  Review  │──▶│   Done   │
+│          │   │          │   │ Progress │   │          │   │          │
+└──────────┘   └──────────┘   └──────────┘   └──────────┘   └──────────┘
+</pre>
+
+            <h3>7.3 Definition of Done (DoD)</h3>
+            <p>Une User Story est considérée comme <strong>terminée</strong> si :</p>
+            <ul>
+                <li><input type="checkbox" disabled> Le code est développé et fonctionnel</li>
+                <li><input type="checkbox" disabled> Les tests unitaires sont écrits (couverture ≥ 80%)</li>
+                <li><input type="checkbox" disabled> Les tests d'intégration passent</li>
+                <li><input type="checkbox" disabled> La revue de code est effectuée et approuvée</li>
+                <li><input type="checkbox" disabled> La documentation est mise à jour</li>
+                <li><input type="checkbox" disabled> Les critères d'acceptation sont validés</li>
+                <li><input type="checkbox" disabled> Le code est mergé dans <code>develop</code></li>
+                <li><input type="checkbox" disabled> Aucune régression détectée</li>
+            </ul>
+
+
+        </section>
+
+        <section id="8-assurance-qualité-du-code">
+            <h2>8. ASSURANCE QUALITÉ DU CODE</h2>
+
+            <h3>8.1 Normes de codage</h3>
+            <h4>Flutter/Dart</h4>
+            <ul>
+                <li>Respect des <a href="https://dart.dev/guides/language/effective-dart" target="_blank">Effective Dart
+                        Guidelines</a></li>
+                <li>Utilisation de <code>flutter_lints</code> avec règles strictes</li>
+                <li>Formatage automatique avec <code>dart format</code></li>
+            </ul>
+
+            <h4>Java/Spring Boot</h4>
+            <ul>
+                <li>Respect des conventions Java standard</li>
+                <li>Utilisation de Lombok pour réduire le boilerplate</li>
+                <li>Documentation Javadoc obligatoire</li>
+            </ul>
+
+            <h3>8.2 Règles de codage spécifiques</h3>
+            <p>Exemple de fichier <code>analysis_options.yaml</code> :</p>
+            <pre><code class="language-yaml">linter:
+  rules:
+    - always_declare_return_types
+    - always_require_non_null_named_parameters
+    - annotate_overrides
+    - avoid_empty_else
+    - avoid_print
+    - avoid_relative_lib_imports
+    - avoid_returning_null_for_future
+    - avoid_slow_async_io
+    - avoid_types_as_parameter_names
+    - avoid_unused_constructor_parameters
+    - await_only_futures
+    - camel_case_extensions
+    - camel_case_types
+    - cancel_subscriptions
+    - close_sinks
+    - constant_identifier_names
+    - prefer_const_constructors
+    - prefer_final_fields
+    - prefer_final_locals
+    - require_trailing_commas</code></pre>
+
+            <h3>8.3 Revue de code</h3>
+            <h4>Objectifs</h4>
+            <ul>
+                <li>Détecter les défauts le plus tôt possible</li>
+                <li>Partager les connaissances au sein de l'équipe</li>
+                <li>Garantir la cohérence du code</li>
+            </ul>
+
+            <h4>Checklist de revue</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Points à vérifier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Fonctionnel</strong></td>
+                        <td>Le code répond-il aux exigences ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lisibilité</strong></td>
+                        <td>Le code est-il clair et compréhensible ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Performance</strong></td>
+                        <td>Y a-t-il des optimisations possibles ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sécurité</strong></td>
+                        <td>Y a-t-il des vulnérabilités ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tests</strong></td>
+                        <td>Les tests sont-ils suffisants ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Documentation</strong></td>
+                        <td>Le code est-il documenté ?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>8.4 Analyse statique</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Outil</th>
+                        <th>Usage</th>
+                        <th>Seuil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>flutter analyze</code></td>
+                        <td>Analyse Dart</td>
+                        <td>0 erreur, 0 warning</td>
+                    </tr>
+                    <tr>
+                        <td>SonarQube</td>
+                        <td>Qualité globale</td>
+                        <td>Grade A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="9-stratégie-de-tests">
+            <h2>9. STRATÉGIE DE TESTS</h2>
+
+            <h3>9.1 Pyramide des tests</h3>
+            <pre>
+                    ┌───────────────┐
+                   /│   Tests E2E   │\
+                  / │   (5-10%)     │ \
+                 /  └───────────────┘  \
+                /   ┌───────────────┐   \
+               /    │    Tests      │    \
+              /     │ d'intégration │     \
+             /      │   (20-30%)    │      \
+            /       └───────────────┘       \
+           /        ┌───────────────┐        \
+          /         │    Tests      │         \
+         /          │   unitaires   │          \
+        /           │   (60-70%)    │           \
+       /            └───────────────┘            \
+      └──────────────────────────────────────────┘
+</pre>
+
+            <h3>9.2 Types de tests</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Outils</th>
+                        <th>Couverture cible</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Unitaires</strong></td>
+                        <td>Test d'une unité isolée</td>
+                        <td>flutter_test, JUnit</td>
+                        <td>≥ 80%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Widget</strong></td>
+                        <td>Test des composants UI</td>
+                        <td>flutter_test</td>
+                        <td>≥ 70%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intégration</strong></td>
+                        <td>Test des interactions</td>
+                        <td>integration_test</td>
+                        <td>≥ 60%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>E2E</strong></td>
+                        <td>Scénarios utilisateur</td>
+                        <td>Selenium, Appium</td>
+                        <td>Critiques</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Performance</strong></td>
+                        <td>Temps de réponse, charge</td>
+                        <td>JMeter</td>
+                        <td>Selon SLA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sécurité</strong></td>
+                        <td>Vulnérabilités</td>
+                        <td>OWASP ZAP</td>
+                        <td>0 critique</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>9.3 Plan de tests unitaires</h3>
+            <h4>Frontend (Flutter)</h4>
+            <pre><code class="language-dart">// Exemple de test unitaire
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {
+  group('LoginController', () {
+    test('should return error when credentials are invalid', () async {
+      // Arrange
+      final controller = LoginController(mockRepository);
+      
+      // Act
+      await controller.login('wrong@email.com', 'wrongpassword');
+      
+      // Assert
+      expect(controller.state, isA<AsyncError>());
+    });
+    
+    test('should navigate to dashboard on successful login', () async {
+      // Arrange
+      final controller = LoginController(mockRepository);
+      
+      // Act
+      await controller.login('admin@hospital.com', 'admin123');
+      
+      // Assert
+      expect(controller.state, isA<AsyncData>());
+    });
+  });
+}</code></pre>
+
+            <h4>Backend (Spring Boot)</h4>
+            <pre><code class="language-java">// Exemple de test unitaire
+@ExtendWith(MockitoExtension.class)
+class AuthServiceTest {
+    
+    @Mock
+    private UtilisateurRepository utilisateurRepository;
+    
+    @Mock
+    private PasswordEncoder passwordEncoder;
+    
+    @InjectMocks
+    private AuthService authService;
+    
+    @Test
+    void login_WithValidCredentials_ShouldReturnToken() {
+        // Arrange
+        when(utilisateurRepository.findByEmail(anyString()))
+            .thenReturn(Optional.of(testUser));
+        when(passwordEncoder.matches(anyString(), anyString()))
+            .thenReturn(true);
+        
+        // Act
+        LoginResponse response = authService.login(loginRequest);
+        
+        // Assert
+        assertNotNull(response.getToken());
+        assertEquals("admin@hospital.com", response.getEmail());
+    }
+    
+    @Test
+    void login_WithInvalidPassword_ShouldThrowException() {
+        // Arrange
+        when(utilisateurRepository.findByEmail(anyString()))
+            .thenReturn(Optional.of(testUser));
+        when(passwordEncoder.matches(anyString(), anyString()))
+            .thenReturn(false);
+        
+        // Act & Assert
+        assertThrows(AuthenticationException.class, 
+            () -> authService.login(loginRequest));
+    }
+}</code></pre>
+
+            <h3>9.4 Campagnes de tests</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Tests exécutés</th>
+                        <th>Critères de sortie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Développement</strong></td>
+                        <td>UT, Widget</td>
+                        <td>100% passent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intégration</strong></td>
+                        <td>IT, API</td>
+                        <td>100% passent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pré-release</strong></td>
+                        <td>E2E, Perf, Sécu</td>
+                        <td>100% critiques passent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Production</strong></td>
+                        <td>Smoke tests</td>
+                        <td>100% passent</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>9.5 Critères d'acceptation des tests</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Métrique</th>
+                        <th>Seuil minimum</th>
+                        <th>Objectif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Couverture globale</td>
+                        <td>70%</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>Couverture branches</td>
+                        <td>60%</td>
+                        <td>75%</td>
+                    </tr>
+                    <tr>
+                        <td>Tests passants</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>Temps d'exécution UT</td>
+                        <td>&lt; 5 min</td>
+                        <td>&lt; 2 min</td>
+                    </tr>
+                    <tr>
+                        <td>Temps d'exécution IT</td>
+                        <td>&lt; 15 min</td>
+                        <td>&lt; 10 min</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <section id="10-sécurité">
+            <h2>10. SÉCURITÉ</h2>
+
+            <h3>10.1 Exigences de sécurité</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domaine</th>
+                        <th>Exigence</th>
+                        <th>Implémentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Authentification</strong></td>
+                        <td>Mots de passe sécurisés</td>
+                        <td>BCrypt (coût 10+)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Autorisation</strong></td>
+                        <td>Contrôle d'accès</td>
+                        <td>JWT + Rôles</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Confidentialité</strong></td>
+                        <td>Chiffrement des données</td>
+                        <td>HTTPS, AES-256</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intégrité</strong></td>
+                        <td>Protection contre les modifications</td>
+                        <td>Signatures JWT</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Traçabilité</strong></td>
+                        <td>Journalisation des actions</td>
+                        <td>Logs d'audit</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>10.2 Mesures de sécurité implémentées</h3>
+            <h4>Authentification</h4>
+            <ul>
+                <li>✅ Mots de passe hachés avec BCrypt</li>
+                <li>✅ Tokens JWT avec expiration (24h)</li>
+                <li>✅ Invalidation des tokens après changement de mot de passe</li>
+                <li>✅ Protection contre les attaques par force brute</li>
+                <li>✅ Validation des entrées utilisateur</li>
+            </ul>
+
+            <h4>Sécurité API</h4>
+            <ul>
+                <li>✅ CORS configuré (origines autorisées)</li>
+                <li>✅ Headers de sécurité (X-Content-Type-Options, etc.)</li>
+                <li>✅ Rate limiting</li>
+                <li>✅ Validation des données entrantes</li>
+                <li>✅ Protection CSRF désactivée (API stateless)</li>
+            </ul>
+
+            <h4>Sécurité des données</h4>
+            <ul>
+                <li>✅ Connexion HTTPS obligatoire (production)</li>
+                <li>✅ Chiffrement des données sensibles</li>
+                <li>✅ Pas de stockage de mots de passe en clair</li>
+                <li>✅ Logs sans données sensibles</li>
+            </ul>
+
+            <h3>10.3 Tests de sécurité</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Outil</th>
+                        <th>Fréquence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Analyse de vulnérabilités</td>
+                        <td>OWASP ZAP</td>
+                        <td>Hebdomadaire</td>
+                    </tr>
+                    <tr>
+                        <td>Audit de dépendances</td>
+                        <td>Dependabot</td>
+                        <td>Continue</td>
+                    </tr>
+                    <tr>
+                        <td>Test d'intrusion</td>
+                        <td>Manuel</td>
+                        <td>Fin de projet</td>
+                    </tr>
+                    <tr>
+                        <td>Revue de code sécurité</td>
+                        <td>SonarQube</td>
+                        <td>À chaque PR</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>10.4 Conformité RGPD</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exigence RGPD</th>
+                        <th>Mesure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Consentement</td>
+                        <td>Formulaire de consentement explicite</td>
+                    </tr>
+                    <tr>
+                        <td>Droit d'accès</td>
+                        <td>Export des données personnelles</td>
+                    </tr>
+                    <tr>
+                        <td>Droit à l'oubli</td>
+                        <td>Procédure de suppression</td>
+                    </tr>
+                    <tr>
+                        <td>Portabilité</td>
+                        <td>Export au format standard</td>
+                    </tr>
+                    <tr>
+                        <td>Minimisation</td>
+                        <td>Collecte limitée aux données nécessaires</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="11-revue-et-audit">
+            <h2>11. REVUE ET AUDIT</h2>
+
+            <h3>11.1 Types de revues</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Fréquence</th>
+                        <th>Participants</th>
+                        <th>Objectif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Revue de code</td>
+                        <td>À chaque PR</td>
+                        <td>Développeurs</td>
+                        <td>Qualité du code</td>
+                    </tr>
+                    <tr>
+                        <td>Revue de sprint</td>
+                        <td>Bi-hebdomadaire</td>
+                        <td>Équipe</td>
+                        <td>Démonstration</td>
+                    </tr>
+                    <tr>
+                        <td>Revue qualité</td>
+                        <td>Fin de projet</td>
+                        <td>Chef de projet, QA</td>
+                        <td>Métriques</td>
+                    </tr>
+                    <tr>
+                        <td>Audit interne</td>
+                        <td>Fin de projet</td>
+                        <td>Équipe complète</td>
+                        <td>Conformité PAQ</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>11.2 Checklist d'audit qualité</h3>
+            <h4>Processus</h4>
+            <ul>
+                <li><input type="checkbox" disabled> Les processus du PAQ sont-ils respectés ?</li>
+                <li><input type="checkbox" disabled> Les revues de code sont-elles systématiques ?</li>
+                <li><input type="checkbox" disabled> Les tests sont-ils exécutés avant chaque merge ?</li>
+            </ul>
+
+            <h4>Documentation</h4>
+            <ul>
+                <li><input type="checkbox" disabled> La documentation est-elle à jour ?</li>
+                <li><input type="checkbox" disabled> Les changements sont-ils tracés ?</li>
+                <li><input type="checkbox" disabled> Les décisions sont-elles documentées ?</li>
+            </ul>
+
+            <h4>Code</h4>
+            <ul>
+                <li><input type="checkbox" disabled> La couverture de tests est-elle suffisante ?</li>
+                <li><input type="checkbox" disabled> Les normes de codage sont-elles respectées ?</li>
+                <li><input type="checkbox" disabled> Les vulnérabilités sont-elles corrigées ?</li>
+            </ul>
+
+            <h4>Livrables</h4>
+            <ul>
+                <li><input type="checkbox" disabled> Les versions sont-elles correctement taguées ?</li>
+                <li><input type="checkbox" disabled> Les release notes sont-elles complètes ?</li>
+                <li><input type="checkbox" disabled> Les environnements sont-ils synchronisés ?</li>
+            </ul>
+        </section>
+
+        <section id="12-indicateurs-qualité">
+            <h2>12. INDICATEURS QUALITÉ</h2>
+
+            <h3>12.1 Tableau de bord qualité</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indicateur</th>
+                        <th>Formule</th>
+                        <th>Objectif</th>
+                        <th>Fréquence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Couverture de tests</td>
+                        <td>Lignes couvertes / Total lignes</td>
+                        <td>≥ 80%</td>
+                        <td>Continue</td>
+                    </tr>
+                    <tr>
+                        <td>Taux de bugs critiques</td>
+                        <td>Bugs critiques / Total bugs</td>
+                        <td>≤ 5%</td>
+                        <td>Hebdo</td>
+                    </tr>
+                    <tr>
+                        <td>Vélocité</td>
+                        <td>Story points livrés / Sprint</td>
+                        <td>Stable</td>
+                        <td>Sprint</td>
+                    </tr>
+                    <tr>
+                        <td>Taux de satisfaction</td>
+                        <td>Notes positives / Total notes</td>
+                        <td>≥ 4/5</td>
+                        <td>Mensuel</td>
+                    </tr>
+                    <tr>
+                        <td>Disponibilité</td>
+                        <td>Uptime / Temps total</td>
+                        <td>≥ 99.9%</td>
+                        <td>Continue</td>
+                    </tr>
+                    <tr>
+                        <td>Performance</td>
+                        <td>Requêtes &lt; 2s / Total requêtes</td>
+                        <td>≥ 95%</td>
+                        <td>Continue</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>12.2 Seuils d'alerte</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indicateur</th>
+                        <th>Vert</th>
+                        <th>Orange</th>
+                        <th>Rouge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Couverture tests</td>
+                        <td>≥ 80%</td>
+                        <td>70-80%</td>
+                        <td>&lt; 70%</td>
+                    </tr>
+                    <tr>
+                        <td>Bugs critiques ouverts</td>
+                        <td>0</td>
+                        <td>1-2</td>
+                        <td>&gt; 2</td>
+                    </tr>
+                    <tr>
+                        <td>Dette technique</td>
+                        <td>&lt; 5 jours</td>
+                        <td>5-10 jours</td>
+                        <td>&gt; 10 jours</td>
+                    </tr>
+                    <tr>
+                        <td>Temps de build</td>
+                        <td>&lt; 10 min</td>
+                        <td>10-15 min</td>
+                        <td>&gt; 15 min</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>12.3 Reporting</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rapport</th>
+                        <th>Destinataires</th>
+                        <th>Fréquence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dashboard CI/CD</td>
+                        <td>Équipe</td>
+                        <td>Temps réel</td>
+                    </tr>
+                    <tr>
+                        <td>Rapport de sprint</td>
+                        <td>Équipe, MOA</td>
+                        <td>Bi-hebdo</td>
+                    </tr>
+                    <tr>
+                        <td>Rapport qualité mensuel</td>
+                        <td>Direction</td>
+                        <td>Mensuel</td>
+                    </tr>
+                    <tr>
+                        <td>Bilan qualité projet</td>
+                        <td>Tous</td>
+                        <td>Fin de projet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="13-annexes">
+            <h2>13. ANNEXES</h2>
+
+            <h3>Annexe A : Glossaire complet</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Terme</th>
+                        <th>Définition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>API</td>
+                        <td>Application Programming Interface</td>
+                    </tr>
+                    <tr>
+                        <td>BCrypt</td>
+                        <td>Algorithme de hachage de mots de passe</td>
+                    </tr>
+                    <tr>
+                        <td>CI/CD</td>
+                        <td>Intégration et Déploiement Continus</td>
+                    </tr>
+                    <tr>
+                        <td>CORS</td>
+                        <td>Cross-Origin Resource Sharing</td>
+                    </tr>
+                    <tr>
+                        <td>CRUD</td>
+                        <td>Create, Read, Update, Delete</td>
+                    </tr>
+                    <tr>
+                        <td>DoD</td>
+                        <td>Definition of Done</td>
+                    </tr>
+                    <tr>
+                        <td>JWT</td>
+                        <td>JSON Web Token</td>
+                    </tr>
+                    <tr>
+                        <td>KLOC</td>
+                        <td>Kilo Lines of Code (milliers de lignes)</td>
+                    </tr>
+                    <tr>
+                        <td>MTTR</td>
+                        <td>Mean Time To Repair</td>
+                    </tr>
+                    <tr>
+                        <td>PR</td>
+                        <td>Pull Request</td>
+                    </tr>
+                    <tr>
+                        <td>RACI</td>
+                        <td>Responsible, Accountable, Consulted, Informed</td>
+                    </tr>
+                    <tr>
+                        <td>RGPD</td>
+                        <td>Règlement Général sur la Protection des Données</td>
+                    </tr>
+                    <tr>
+                        <td>RTL</td>
+                        <td>Right-to-Left (support des langues arabes)</td>
+                    </tr>
+                    <tr>
+                        <td>SLA</td>
+                        <td>Service Level Agreement</td>
+                    </tr>
+                    <tr>
+                        <td>SUS</td>
+                        <td>System Usability Scale</td>
+                    </tr>
+                    <tr>
+                        <td>UT</td>
+                        <td>Unit Test</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Annexe B : Contacts de l'équipe</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rôle</th>
+                        <th>Nom</th>
+                        <th>Responsabilités</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Développeur Frontend</td>
+                        <td>GUEDAD Hassan</td>
+                        <td>Flutter, UI/UX, Widgets, State Management</td>
+                    </tr>
+                    <tr>
+                        <td>Développeur Backend</td>
+                        <td>GUEDAD Mouhssine</td>
+                        <td>Spring Boot, API REST, JWT, JPA</td>
+                    </tr>
+                    <tr>
+                        <td>QA & DevOps</td>
+                        <td>BOUHDARY Ayoub</td>
+                        <td>Tests, CI/CD, Docker, PostgreSQL, SonarQube</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Annexe C : Historique des modifications</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Date</th>
+                        <th>Auteur</th>
+                        <th>Modifications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.0</td>
+                        <td>14/12/2025</td>
+                        <td>BOUHDARY A., GUEDAD H., GUEDAD M.</td>
+                        <td>Création initiale</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="approbations" style="page-break-inside: avoid;">
+            <h2>APPROBATIONS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rôle</th>
+                        <th>Nom</th>
+                        <th>Signature</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Développeur Frontend</td>
+                        <td>GUEDAD Hassan</td>
+                        <td>
+                            <div class="signature-box"></div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Développeur Backend</td>
+                        <td>GUEDAD Mouhssine</td>
+                        <td>
+                            <div class="signature-box"></div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>QA & DevOps</td>
+                        <td>BOUHDARY Ayoub</td>
+                        <td>
+                            <div class="signature-box"></div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="footer">
+            <p>Document rédigé par l'équipe de développement du projet Système de Gestion Hospitalière<br>
+                BOUHDARY Ayoub, GUEDAD Hassan, GUEDAD Mouhssine<br>
+                EMSI Marrakech - Année universitaire 2025-2026<br>
+                Dernière mise à jour : 14 Décembre 2025</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

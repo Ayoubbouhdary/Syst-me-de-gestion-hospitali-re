@@ -18,7 +18,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/prevision")
 @RequiredArgsConstructor
-
 public class PrevisionController {
 
     private final PrevisionService previsionService;

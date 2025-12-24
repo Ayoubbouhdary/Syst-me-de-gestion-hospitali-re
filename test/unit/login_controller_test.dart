@@ -1,11 +1,11 @@
-import 'package:clean_arch_app/features/auth/domain/auth_repository.dart';
+import 'package:clean_arch_app/features/auth/data/auth_repository_impl.dart';
 import 'package:clean_arch_app/features/auth/domain/user.dart';
 import 'package:clean_arch_app/features/auth/presentation/auth_providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-class MockAuthRepository extends Mock implements AuthRepository {}
+class MockAuthRepository extends Mock implements AuthRepositoryImpl {}
 
 void main() {
   late MockAuthRepository mockAuthRepository;
@@ -14,9 +14,7 @@ void main() {
   setUp(() {
     mockAuthRepository = MockAuthRepository();
     container = ProviderContainer(
-      overrides: [
-        authRepositoryProvider.overrideWithValue(mockAuthRepository),
-      ],
+      overrides: [authRepositoryProvider.overrideWithValue(mockAuthRepository)],
     );
   });
 
@@ -29,8 +27,9 @@ void main() {
     const password = 'password';
     final user = User(id: '1', email: email, name: 'Test User');
 
-    when(() => mockAuthRepository.login(email, password))
-        .thenAnswer((_) async => user);
+    when(
+      () => mockAuthRepository.login(email, password),
+    ).thenAnswer((_) async => user);
 
     final controller = container.read(loginControllerProvider.notifier);
 
@@ -44,8 +43,9 @@ void main() {
     const email = 'test@example.com';
     const password = 'wrong';
 
-    when(() => mockAuthRepository.login(email, password))
-        .thenThrow(Exception('Invalid credentials'));
+    when(
+      () => mockAuthRepository.login(email, password),
+    ).thenThrow(Exception('Invalid credentials'));
 
     final controller = container.read(loginControllerProvider.notifier);
 
