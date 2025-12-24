@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rapport d'Analyse SonarQube - Hospital Backend</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; line-height: 1.5; color: #1f2937; }
+    h1, h2, h3, h4 { color: #0f172a; margin-top: 1.4em; margin-bottom: 0.4em; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+    .ok { background: #e0f2f1; color: #0f766e; }
+    .warn { background: #fff7ed; color: #c2410c; }
+    .fail { background: #fee2e2; color: #b91c1c; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+    th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; }
+    th { background: #f8fafc; }
+    code { background: #f1f5f9; padding: 2px 4px; border-radius: 4px; font-size: 13px; }
+    ul { margin: 0 0 12px 20px; }
+    ol { margin: 0 0 12px 20px; }
+    hr { border: 0; border-top: 1px solid #e5e7eb; margin: 24px 0; }
+  </style>
+</head>
+<body>
+    <h1>Rapport d'Analyse SonarQube - Hospital Backend</h1>
+
+  <hr />
+
+  <h2>Présentation SonarQube — Plan des Slides</h2>
+  <p>Utilisez les titres ci-dessous pour construire votre présentation. Ajoutez vos captures sous chaque slide.</p>
+  <style>
+    .placeholder { border: 1px dashed #cbd5e1; padding: 10px; margin: 8px 0; color: #64748b; font-size: 13px; }
+  </style>
+
+  <h3>Slide 1 — Contexte & objectifs</h3>
+  <ul>
+    <li>Projet : Hospital Financial Dashboard API (Spring Boot).</li>
+    <li>Objectif : assurer qualité, sécurité et maintenabilité via SonarQube.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : logo/projet + architecture simple]</div>
+
+  <h3>Slide 2 — Qu’est-ce que SonarQube ?</h3>
+  <ul>
+    <li>Plateforme d’analyse statique : règles (Quality Profile) + seuils (Quality Gate).</li>
+    <li>Métriques clé : Bugs, Vulnerabilities, Code Smells, Coverage, Duplications, Hotspots.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : page d’accueil SonarQube]</div>
+
+  <h3>Slide 3 — Setup & intégration</h3>
+  <ul>
+    <li>Serveur local : v9.9.8, `Hospital-Backend`.</li>
+    <li>Maven + sonar-maven-plugin, token d’analyse, JaCoCo pour coverage.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : pom.xml ou page token]</div>
+
+  <h3>Slide 4 — Quality Profile (règles)</h3>
+  <ul>
+    <li>Profil personnalisé : "Hospital Java Profile" (extension de Sonar way).</li>
+    <li>Règles actives : 479 Java, 24 XML — adaptable au domaine.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : Project Settings &gt; Quality Profiles]</div>
+
+  <h3>Slide 5 — Quality Gate (seuils)</h3>
+  <ul>
+    <li>Gate personnalisé : "Hospital Backend Quality Gate".</li>
+    <li>Conditions : Coverage, Duplications, Ratings A, Hotspots reviewed (ajusté).</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : Project Settings &gt; Quality Gate]</div>
+
+  <h3>Slide 6 — Résultats d’analyse</h3>
+  <ul>
+    <li>Status : PASSED, 7 bugs, 0 vulnérabilités, 34 smells, 8 hotspots.</li>
+    <li>Coverage 0%, duplications 0.0% — plan d’amélioration défini.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : Dashboard global]</div>
+
+  <h3>Slide 7 — Security Hotspots</h3>
+  <ul>
+    <li>Exemple : hard-coded credential dans `pom.xml` — utiliser variables d’environnement.</li>
+    <li>Processus de review et priorisation (HIGH/LOW).</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : page Security Hotspots]</div>
+
+  <h3>Slide 8 — Issues prioritaires</h3>
+  <ul>
+    <li>Refactoring des constantes dupliquées, amélioration Streams, suppression wildcards.</li>
+    <li>Dette technique estimée : 5h 20min.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : page Issues avec filtres]</div>
+
+  <h3>Slide 9 — Plan d’action</h3>
+  <ul>
+    <li>Tests unitaires & intégration (objectif 80% coverage).</li>
+    <li>Review 100% des hotspots, réduction smells & correction bugs.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : graphe Activity ou checklist]</div>
+
+  <h3>Slide 10 — Intégration CI/CD</h3>
+  <ul>
+    <li>Exécuter `mvn clean verify sonar:sonar` dans pipeline.</li>
+    <li>Bloquer déploiement si Quality Gate FAILED.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : pipeline/commandes]</div>
+
+  <h3>Slide 11 — Conclusion</h3>
+  <ul>
+    <li>Qualité maîtrisée, visibilité accrue, améliorations planifiées.</li>
+    <li>Prochaines étapes : coverage, sécurité, CI/CD.</li>
+  </ul>
+  <div class="placeholder">[Insérer capture : slide de fin / Q&A]</div>
+
+ 

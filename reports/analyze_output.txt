@@ -1,0 +1,379 @@
+﻿Analyzing flutter_project_Syst-me-de-Gestion-Hospitali-re...     
+
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:77:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:185:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:195:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:221:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:248:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:253:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:321:33 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\core\layout\main_layout.dart:354:19 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\layout\main_layout.dart:424:46 - deprecated_member_use
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:197:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:198:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:213:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:323:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:324:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:379:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:386:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:392:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:394:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:402:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:428:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:429:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:431:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:432:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:434:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:435:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:438:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:439:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:440:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:492:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:493:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:494:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:496:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:497:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:498:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:499:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:501:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:502:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:503:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:504:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:514:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:515:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:516:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:517:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:521:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:674:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:675:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:690:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:800:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:801:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:856:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:863:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:869:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:871:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:879:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:905:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:906:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:908:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:909:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:911:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:912:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:915:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:916:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:917:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:969:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:970:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:971:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:973:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:974:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:975:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:976:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:978:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:979:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:980:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:981:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:991:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:992:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:993:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:994:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:998:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1151:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1152:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1167:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1277:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1278:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1333:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1340:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1346:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1348:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1356:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1382:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1383:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1385:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1386:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1388:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1389:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1392:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1393:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1394:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1446:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1447:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1448:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1450:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1451:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1452:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1453:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1455:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1456:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1457:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1458:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1468:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1469:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1470:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1471:7 - equal_keys_in_map
+warning - Two keys in a map literal shouldn't be equal - lib\core\localization\app_localizations.dart:1475:7 - equal_keys_in_map
+   info - 'DioRef' is deprecated and shouldn't be used. Will be removed in 3.0. Use Ref instead - lib\core\network\dio_provider.dart:7:9 - deprecated_member_use_from_same_package
+   info - 'GoRouterRef' is deprecated and shouldn't be used. Will be removed in 3.0. Use Ref instead - lib\core\router\app_router.dart:39:19 - deprecated_member_use_from_same_package
+   info - 'stream' is deprecated and shouldn't be used. .stream will be removed in 3.0.0. As a replacement, either listen to the provider itself (AsyncValue) or .future - lib\core\router\app_router.dart:42:56 - deprecated_member_use
+   info - Unnecessary use of string interpolation - lib\core\utils\export_service.dart:52:43 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\core\utils\export_service.dart:53:44 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\core\utils\export_service.dart:54:40 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\core\utils\export_service.dart:55:42 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\core\utils\export_service.dart:56:45 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\core\utils\export_service.dart:57:38 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\core\utils\export_service.dart:58:36 - unnecessary_string_interpolations
+   info - The imported package 'http' isn't a dependency of the importing package - lib\features\auth\data\auth_repository_impl.dart:3:8 - depend_on_referenced_packages
+  error - The method 'changePassword' isn't defined for the type 'AuthRepository' - lib\features\auth\presentation\auth_providers.dart:72:12 - undefined_method
+  error - The method 'setupPassword' isn't defined for the type 'AuthRepository' - lib\features\auth\presentation\login_screen.dart:77:28 - undefined_method
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:206:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:239:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:241:64 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:269:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:270:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:302:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:303:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:388:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:420:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:464:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:465:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:495:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\login_screen.dart:496:39 - deprecated_member_use
+warning - The value of the local variable 'lang' isn't used - lib\features\dashboard\presentation\dashboard_screen.dart:24:11 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:102:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:109:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:165:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:176:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:181:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:210:51 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen.dart:225:37 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:252:144 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:301:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:317:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:376:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen.dart:378:48 - deprecated_member_use
+   info - Use the end-of-line form ('///') for doc comments - lib\features\dashboard\presentation\dashboard_screen_modern.dart:15:1 - slash_for_doc_comments
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:167:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:179:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:195:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:198:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:329:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:332:35 - deprecated_member_use
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:370:85 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:370:88 - dead_null_aware_expression
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:371:80 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:371:83 - dead_null_aware_expression
+warning - The value of the local variable 'totalSoins' isn't used - lib\features\dashboard\presentation\dashboard_screen_modern.dart:374:11 - unused_local_variable
+warning - The value of the local variable 'totalPatients' isn't used - lib\features\dashboard\presentation\dashboard_screen_modern.dart:375:11 - unused_local_variable
+warning - The value of the local variable 'coutTotalSoins' isn't used - lib\features\dashboard\presentation\dashboard_screen_modern.dart:376:11 - unused_local_variable
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:376:76 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:376:79 - dead_null_aware_expression
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:399:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:414:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:476:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:538:38 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_modern.dart:544:34 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:596:38 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_modern.dart:602:34 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:612:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:613:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:656:29 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:659:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:664:33 - deprecated_member_use
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:682:76 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:682:79 - dead_null_aware_expression
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:750:19 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:751:19 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:756:24 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:769:32 - deprecated_member_use
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:804:80 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:804:83 - dead_null_aware_expression
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:860:55 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:860:58 - dead_null_aware_expression
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:863:57 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:863:60 - dead_null_aware_expression
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:887:52 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:887:55 - dead_null_aware_expression
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:901:76 - deprecated_member_use
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:924:67 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:924:70 - dead_null_aware_expression
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:977:47 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:977:50 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:978:47 - dead_null_aware_expression
+warning - Dead code - lib\features\dashboard\presentation\dashboard_screen_modern.dart:988:56 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:988:59 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\features\dashboard\presentation\dashboard_screen_modern.dart:997:56 - dead_null_aware_expression
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:1196:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:1197:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:1225:30 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:1322:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_modern.dart:1357:30 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:77:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:79:26 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:91:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:104:49 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:112:49 - deprecated_member_use
+warning - The value of the local variable 'totalSoins' isn't used - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:281:11 - unused_local_variable
+warning - The value of the local variable 'totalPatients' isn't used - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:282:11 - unused_local_variable
+warning - The value of the local variable 'coutTotalSoins' isn't used - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:283:11 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:367:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:384:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:390:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:498:34 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:560:40 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:831:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:882:32 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:885:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_old_backup.dart:1001:40 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_original.dart:293:33 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\dashboard\presentation\dashboard_screen_original.dart:294:35 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\dashboard\presentation\dashboard_screen_original.dart:379:24 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:80:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:86:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:183:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:193:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:199:98 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:241:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:286:138 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:320:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:334:80 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:385:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:457:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:490:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:564:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:586:48 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:603:51 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\finance\presentation\finance_screen.dart:614:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\finance\presentation\finance_screen.dart:616:31 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\finance\presentation\finance_screen.dart:616:54 - prefer_const_constructors
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:632:77 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:649:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:715:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:737:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:744:52 - deprecated_member_use
+   info - Statements in an if should be enclosed in a block - lib\features\finance\presentation\finance_screen.dart:762:23 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\finance\presentation\finance_screen.dart:763:28 - curly_braces_in_flow_control_structures
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\finance\presentation\finance_screen.dart:785:50 - deprecated_member_use
+warning - Unused import: 'package:go_router/go_router.dart' - lib\features\home\presentation\home_screen.dart:2:8 - unused_import
+   info - 'ItemsRepositoryRef' is deprecated and shouldn't be used. Will be removed in 3.0. Use Ref instead - lib\features\items\presentation\items_providers.dart:9:33 - deprecated_member_use_from_same_package
+   info - 'ItemsListRef' is deprecated and shouldn't be used. Will be removed in 3.0. Use Ref instead - lib\features\items\presentation\items_providers.dart:14:30 - deprecated_member_use_from_same_package
+   info - 'ItemDetailRef' is deprecated and shouldn't be used. Will be removed in 3.0. Use Ref instead - lib\features\items\presentation\items_providers.dart:19:25 - deprecated_member_use_from_same_package
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:119:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:141:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:143:74 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:169:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:189:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:225:25 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:227:72 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:234:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:297:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\presentation\notifications_screen.dart:323:46 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:191:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:203:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:218:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:232:64 - deprecated_member_use
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\parametres\presentation\parametres_screen.dart:252:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:273:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:349:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:351:62 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\features\parametres\presentation\parametres_screen.dart:417:35 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\parametres\presentation\parametres_screen.dart:418:34 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\parametres\presentation\parametres_screen.dart:530:40 - deprecated_member_use
+warning - Unused import: 'package:flutter/material.dart' - lib\features\parametres\presentation\settings_provider.dart:1:8 - unused_import
+   info - The imported package 'http' isn't a dependency of the importing package - lib\features\patients\data\patient_repository_impl.dart:2:8 - depend_on_referenced_packages
+   info - The import of 'package:json_annotation/json_annotation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:freezed_annotation/freezed_annotation.dart' - lib\features\patients\domain\patient.dart:2:8 - unnecessary_import
+   info - Don't use 'BuildContext's across async gaps - lib\features\patients\presentation\patient_form_screen.dart:115:30 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\patients\presentation\patients_list_screen.dart:64:65 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\patients\presentation\patients_list_screen.dart:153:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\patients\presentation\patients_list_screen.dart:159:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\patients\presentation\patients_list_screen.dart:185:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\patients\presentation\patients_list_screen.dart:192:42 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\patients\presentation\patients_list_screen.dart:341:42 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\patients\presentation\patients_list_screen.dart:346:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\patients\presentation\patients_list_screen.dart:374:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\patients\presentation\patients_list_screen.dart:379:38 - use_build_context_synchronously
+warning - Unused import: 'package:intl/intl.dart' - lib\features\rapports\presentation\rapports_screen.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:149:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:163:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:165:72 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:205:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:215:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:221:67 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:243:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:254:158 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:272:78 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:280:79 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:316:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:374:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rapports\presentation\rapports_screen.dart:405:58 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\features\rapports\presentation\rapports_screen.dart:538:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\rapports\presentation\rapports_screen.dart:552:28 - use_build_context_synchronously
+   info - The imported package 'http' isn't a dependency of the importing package - lib\features\rendez_vous\data\rendez_vous_repository_impl.dart:2:8 - depend_on_referenced_packages
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:122:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:160:51 - deprecated_member_use
+warning - The value of the local variable 'statusText' isn't used - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:234:12 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:249:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:255:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:273:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:327:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:371:46 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:419:21 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:437:27 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:499:42 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:504:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:532:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\rendez_vous\presentation\rendez_vous_screen.dart:537:38 - use_build_context_synchronously
+   info - The imported package 'http' isn't a dependency of the importing package - lib\features\services\data\service_repository_impl.dart:2:8 - depend_on_referenced_packages
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:41:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:43:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:44:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:51:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:54:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:60:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:87:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:88:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:96:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:97:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:101:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:104:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\services\data\service_repository_impl.dart:110:7 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\services\presentation\services_list_screen.dart:59:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\services\presentation\services_list_screen.dart:150:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\services\presentation\services_list_screen.dart:151:61 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\services\presentation\services_list_screen.dart:169:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\services\presentation\services_list_screen.dart:217:54 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\features\services\presentation\services_list_screen.dart:324:38 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\services\presentation\services_list_screen.dart:331:38 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\services\presentation\services_list_screen.dart:360:38 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\services\presentation\services_list_screen.dart:364:38 - use_build_context_synchronously
+   info - The imported package 'http' isn't a dependency of the importing package - lib\features\soins\data\soin_repository_impl.dart:2:8 - depend_on_referenced_packages
+   info - Don't invoke 'print' in production code - lib\features\soins\data\soin_repository_impl.dart:51:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\soins\data\soin_repository_impl.dart:53:7 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\soins\presentation\soins_list_screen.dart:65:65 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\soins\presentation\soins_list_screen.dart:83:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\soins\presentation\soins_list_screen.dart:194:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\soins\presentation\soins_list_screen.dart:200:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\soins\presentation\soins_list_screen.dart:234:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\soins\presentation\soins_list_screen.dart:240:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\soins\presentation\soins_list_screen.dart:252:66 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\soins\presentation\soins_list_screen.dart:316:19 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\features\soins\presentation\soins_list_screen.dart:351:25 - use_build_context_synchronously
+warning - Dead code - lib\features\soins\presentation\soins_list_screen.dart:387:49 - dead_code
+warning - The left operand can't be null, so the right operand is never executed - lib\features\soins\presentation\soins_list_screen.dart:387:52 - dead_null_aware_expression
+   info - Don't use 'BuildContext's across async gaps - lib\features\soins\presentation\soins_list_screen.dart:407:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\soins\presentation\soins_list_screen.dart:411:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\soins\presentation\soins_list_screen.dart:438:38 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\soins\presentation\soins_list_screen.dart:442:38 - use_build_context_synchronously
+   info - Dependencies not sorted alphabetically - pubspec.yaml:12:3 - sort_pub_dependencies
+   info - Dependencies not sorted alphabetically - pubspec.yaml:37:3 - sort_pub_dependencies
+   info - Use 'const' with the constructor to improve performance - test\unit\login_controller_test.dart:30:18 - prefer_const_constructors
+
+flutter : 368 issues found. (ran in 7.1s)
+Au caractère Ligne:1 : 86
++ ... t-me-de-Gestion-Hospitali-re' ; flutter analyze --no-pub 2>&1 | Out-F ...
++                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (368 issues found. (ran in 7.1s):String) [], RemoteEx 
+   ception
+    + FullyQualifiedErrorId : NativeCommandError
+ 
